@@ -5,7 +5,7 @@
   text-decoration: none;
   outline: none;
   border: none;
-  font-style: monospace;
+  font-family: serif;
 }
 *::selection {
   background: #1fe439c7;
@@ -50,7 +50,7 @@ header #home {
   color: #fff;
   width: 30px;
   height: 35px;
-  padding: 10px 15px;
+  padding: 2px 15px;
   border-radius: 25px;
 }
 header #home:hover {
@@ -186,7 +186,56 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding-bottom: 4rem;
   }
+  #register form {
+    /* flex: 1 1 40rem; */
+    width: 450px;
+    padding: 2rem 3rem;
+    border: 2px solid #0f0f0f;
+    border-radius: 25px;
+    box-shadow: 0 .5rem 1rem rgba(216, 208, 208, 0.2);
+    background: #0f0f0f;
+  }
+  #register form .input {
+    position: relative;
+    cursor: pointer;
+  }
+  textarea::placeholder {
+    font-family: serif;
+    color: rgb(5, 209, 5);
+    font-size: 1.7rem;
+  }
+  textarea {
+    background-color: transparent;
+    color: rgb(143, 140, 140);
+    resize: none;
+    margin-left: 8px;
+    width: 100%;
+    /* height: 12rem; */
+  }
+   #register form .input input,
+   #register form .input textarea {
+     width: 100%;
+     background: none;
+     color: rgb(143, 140, 140);
+     margin: .5rem;
+     padding: .5rem;
+     font-size: 1.7rem;
+     border-bottom: 2px solid #000;
+     text-transform: none;
+     cursor: pointer;
+   }
+   #btn {
+     display: flex;
+     align-items: center;
+   }
+   #register form .input label {
+     font-size: 1.7rem;
+     color: rgb(6, 241, 6);
+     transition: .2s linear;
+   }
+
 /* media queries */
 @media (max-width: 1200px) {
   html {
@@ -246,5 +295,6 @@ header #home {
   /* header input:checked ~ label::after {
     content: "\2a2f";
   } */
+  
 
 }

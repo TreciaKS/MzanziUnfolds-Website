@@ -194,8 +194,8 @@ section {
     padding: 2rem 3rem;
     border: 2px solid #0f0f0f;
     border-radius: 25px;
-    box-shadow: 0 .5rem 1rem rgba(216, 208, 208, 0.2);
-    background: #0f0f0f;
+    /* box-shadow: 0 .5rem 1rem rgba(216, 208, 208, 0.2); */
+    background: #0c0b0b;
   }
   #register form .input {
     position: relative;
@@ -235,7 +235,63 @@ section {
      color: rgb(6, 241, 6);
      transition: .2s linear;
    }
-
+   /* footer section */
+  .footer {
+    color:rgb(230, 219, 219);
+    padding-top: 3rem;
+    background-color: rgb(3, 3, 3);
+  }
+  .footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer .box-container .box {
+    flex: 1 1 25rem;
+    margin: 2rem;
+  }
+  .footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: rgb(51, 235, 14);
+    text-decoration: none;
+    /* text-underline-offset: 1rem; */
+  }
+  .footer .box-container .box p {
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    color: #ccc;
+  }
+  .footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    color: #ccc;
+  }
+  .footer .box-container .box a:hover {
+    text-decoration: underline;
+    color: rgb(51, 235, 14);
+  }
+  .footer .box-container .box .info {
+    display: flex;
+    align-items: center;
+  }
+  .footer .box-container .box .info {
+    margin: .1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    height: 3.9rem;
+    width: 4.5rem;
+    text-align: left;
+  }
+  .footer .designer {
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color: #fff;
+    border-top: 1px solid rgb(5, 209, 5);
+    padding: 1.5rem;
+    text-align: center;
+  }
 /* media queries */
 @media (max-width: 1200px) {
   html {
@@ -266,7 +322,7 @@ section {
     top: 100%;
     left: 0;
     width: 100%;
-    background: rgba(17, 16, 16, 0.945);
+    background: rgba(17, 16, 16, 0.966);
     padding: 1rem 2rem;
     border-top: .1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
@@ -295,6 +351,6 @@ header #home {
   /* header input:checked ~ label::after {
     content: "\2a2f";
   } */
-  
+
 
 }

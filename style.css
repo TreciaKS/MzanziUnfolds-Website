@@ -2,4 +2,249 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-style: monospace;
+}
+*::selection {
+  background: #1fe439c7;
+  color: #fff;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  background-image: linear-gradient(45deg, rgb(0, 0, 0, .9), rgba(0, 0, 0, .5)), url(stylish-young-woman-sitting-restaurant-using-smartphone.jpg);  
+  background-repeat: no-repeat;
+  background-size: 1432px;
+  background-position: initial;
+  background-attachment: fixed;
+  line-height: 1.5;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #030303; 
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);  
+  padding: 1rem 3%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all .5s ease-in;
+}
+header .logo {
+  color: #ece7e7;
+  font-size: 2rem;
+}
+header .logo span {
+  color: #00fa21;
+}
+/* Home link */
+header #home {
+  background-color: #00fa21;
+  color: #fff;
+  width: 30px;
+  height: 35px;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+header #home:hover {
+  background-color: #00fa21;
+  color: rgb(15, 14, 14);
+}
+/* other links */
+.navigation a {
+  color: #fff;
+  list-style-type: none;
+  font-size: 1.7rem;
+  margin-left: 2rem;
+}
+header .navigation a:hover {
+  color:  #00fa21;
+}
+/* the checkbox */
+header input {
+  display: none;
+}
+/* hide menu icon */
+header label  {
+  font-size: 3rem;
+  color: #00fa21;
+  cursor: pointer;
+  visibility: hidden;
+}
+section {
+  min-height: 100vh;
+  padding: 0 9%;
+  padding-top: 7.5rem;
+}
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home .content h3 {
+    font-size: 5.5rem;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .home .content h3 span {
+    color: #00fa21;
+    text-transform: uppercase;
+  }
+  .home .content p {
+    line-height: 1.5;
+    font-size: 1.9rem;
+    color: rgb(230, 224, 224);
+    padding: 1rem 0;
+  }
+
+  /*register button */
+  /* starts */
+  .btn {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: #03b603ea;
+    cursor: pointer;
+    transition: all .3s linear;
+  }
+  .btn:hover {
+    letter-spacing: 2px;
+    box-shadow: 0 0 1.5rem #dee9e0ad;
+    background-color: #f8fdf8;
+    color: rgb(0, 0, 0);
+    transform: translateY(-5px);
+    cursor: pointer;
+    transition: transform 180ms;
+  }
+  /* ends */
+
+  /* features */
+  .heading {
+    text-align: center;
+    background: linear-gradient(45deg, rgb(230, 219, 219), rgb(5, 255, 26));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+  }
+  .features .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .features .content-wrapper .wrapper {
+    text-align: center;
+    color: #fff;
+    flex: 1 1 30rem;
+    background: rgba(0, 0, 0, 0.842);
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: 15px;
+    /* box-shadow: 2px -1px 3px .2px rgba(90, 89, 89, 0.89); */
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    transition: .3s linear;
+  }
+  .features .content-wrapper .wrapper img {
+    height: 15rem;
+  }
+  .features .content-wrapper .wrapper h3 {
+    font-size: 2rem;
+    color:  rgb(70, 161, 78);
+  }
+    .features .content-wrapper .wrapper p {
+    font-size: 1.2rem;
+    color:  rgb(241, 247, 241);
+    padding: 1rem 0;
+  }
+  /* About Us */
+  .about .content h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(115, 245, 158);
+  }
+  section .content p {
+    font-size: 1.9rem;
+    color: rgb(230, 224, 224);
+    padding: 1rem 0;
+  }
+  #register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+/* media queries */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+/* media queries */
+@media (max-width: 770px) {
+  body {
+  background-size: 1242px;
+  background-position: center;
+  background-attachment: fixed;
+  }
+  .home .content h3 {
+    font-size: 3.6rem;
+  }
+  .home .content p,
+  section .content p {
+    font-size: 1.6rem;
+  }
+  /* show the menu icon  */
+  header label {
+    visibility: visible;
+    opacity: 1;
+  }
+  header .navigation {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(17, 16, 16, 0.945);
+    padding: 1rem 2rem;
+    border-top: .1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+    transform-origin: top;
+    transition: scaleY(0);
+    opacity: 0;
+  }
+header #home {
+  background-color: #00d11c;
+  /* background-color: rgb(173, 171, 4); */
+  color: #fff;
+  width: 100%;
+  border-radius: 0px;
+}
+  header .navigation a {
+    display: block;
+    margin: 2rem 0;
+    font-size: 2rem;
+  }
+  /* show nav when clicked */
+  header input:checked ~ .navigation {
+    transform: scaleY(1);
+    opacity: 1;
+    transition: .3s linear;
+  }
+  /* header input:checked ~ label::after {
+    content: "\2a2f";
+  } */
+
 }
